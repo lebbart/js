@@ -3,5 +3,11 @@
   "description" : "This repo to play js code",
   "license" : "MIT",
   "repository" : {},
-  "readme" : "readme.md"
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Bogdan Lebedenko",
+  "devDependencies": {
+    "lite-server": "^2.1.0"
+  }
 }
