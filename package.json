@@ -8,6 +8,8 @@
   },
   "author": "Bogdan Lebedenko",
   "devDependencies": {
-    "lite-server": "^2.1.0"
+    "lite-server": "^2.1.0",
+    "chai" : "*",
+    "mocha" : "*"
   }
 }

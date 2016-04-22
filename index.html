@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="tests/mocha/mocha.css">
+
+    <script src="tests/mocha/mocha.js"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>
+
+    <script src="tests/chai/chai.js"></script>
+    <script>
+        var assert = chai.assert;
+    </script>
 </head>
 <body>
 
@@ -13,13 +24,37 @@
 
 <p>Важная информация</p>
 
-<p>Важная информация</p>
-<p>Важная информация</p>
-<p>Важная информация</p>
-<p>Важная информация</p>
 
-<script src="js/scripts.js?speed=0" async></script>
-<script src="js/alert.js?speed=0" async></script>
+<script>
+    function pow(n, m) {
+        var count = n;
+        for (var i = 1; i < m; i++) {
+            count *= n;
+        }
+        return count;
+    }
+
+    if (m <= 1) {
+        confirm('Степень ' + m + ' не может быть меньше 1!');
+    } else {
+        alert(pow(n, m));
+    }
+</script>
+
+<!-- в этом скрипте находятся спеки -->
+<script src="tests/test.js"></script>
+
+<!-- в элементе с id="mocha" будут результаты тестов -->
+<div id="mocha"></div>
+
+<!-- запустить тесты! -->
+<script>
+    mocha.run();
+</script>
+
+<script src="js/scripts.js"></script>
+<script src="js/alert.js"></script>
+
 <!--<script src="js/pow.js?speed=0" async></script>-->
 
 <!-- can use defer to get -->

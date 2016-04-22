@@ -557,3 +557,25 @@ function fib(n) {
 }
 
 console.log("Фиббоначи: " + fib(20));
+
+/*
+ *
+ * Named Function Expression
+ *
+ */
+
+var f = function someName(){
+    for (var i = 1; i <= 5; i++) {
+        console.log(i);
+    }
+    console.log(someName);
+};
+
+var g = function factor(n) {
+    return n ? n*factor(n-1) : 1;
+};
+
+var h = g;
+g = null;
+
+console.log(h(5));
