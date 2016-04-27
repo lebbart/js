@@ -172,6 +172,60 @@ console.log(x);
 
 /*
  *
- *
+ * Interesting method
  *
  */
+
+var someX = 3.457;
+console.log(Math.round(someX * 100)/100);
+
+/*
+ *
+ * toFixed()
+ *
+ */
+
+var thisIsIt = 124.136523;
+console.log(+thisIsIt.toFixed(2));
+
+/*
+ *
+ * Math.round() & toFixed()
+ * not equal!
+ *
+ */
+
+var price = 6.35;
+
+console.log(+price.toFixed(1));
+console.log(Math.round(price * 10)/10);
+
+console.log(0.1 + 0.2 == 0.3);
+console.log(0.1 + 0.2 > 0.3);
+
+// var 1
+console.log((0.1 * 10 + 0.2 * 10) / 10 == 0.3);
+
+// var 2
+var result = 0.1 + 0.3;
+console.log(+result.toFixed(6) == 0.4);
+
+/*
+ *
+ * Другие полезные функции
+ * Math.random()
+ * Math.min()
+ * Math.max()
+ * Math.sqrt()
+ *
+ */
+
+/*
+ *
+ * Красиво вывести число
+ * toLocaleString()
+ *
+ */
+
+var nums = 123413423524;
+console.log(nums.toLocaleString());
