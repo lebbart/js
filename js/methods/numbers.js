@@ -1,28 +1,6 @@
 /**
- * Created by Bogdan on 4/14/16.
- * Main js file of this project.
- * Will work on it all day, all night
- * to get better results
+ * Created by Bogdan on 5/4/16.
  */
-
-'use strict';
-
-/*
- *
- * Methods and Properties
- *
- */
-
-console.log("Привет! Меня зовут Алерт, я показываю сейчас этот текст, вернее кол-во символов!".length);
-
-var text = 'Some text to find length.';
-console.log(text.length + " - длинна строки");
-
-console.log(text.toUpperCase());
-
-var n = 12.345;
-
-console.log( n.toFixed(1) );
 
 /*
  *
@@ -48,12 +26,12 @@ if (notanum !== notanum) {
 }
 
 /*
-var value = prompt("Введите Infinity", 'Infinity');
+ var value = prompt("Введите Infinity", 'Infinity');
 
-var number = value;
-console.log(number);
+ var number = value;
+ console.log(number);
 
-console.log(isFinite(number));
+ console.log(isFinite(number));
  */
 
 console.log(isFinite(Infinity));
@@ -229,3 +207,109 @@ console.log(+result.toFixed(6) == 0.4);
 
 var nums = 123413423524;
 console.log(nums.toLocaleString());
+
+/*
+ *
+ * Tasks for homework
+ *
+ */
+
+/*
+ *
+ * Task 1
+ *
+ */
+
+//var valueSome = +prompt("Введите 1e число","");
+//var valueOther = +prompt("Введите 2e число","");
+
+//var calculate = valueSome + valueOther;
+//console.log("Summ = " + calculate);
+
+/*
+ *
+ * Task 2
+ *
+ */
+
+console.log(6.35.toFixed(1)); // 6.34999999999999964473 (if toFixed(20))
+console.log(1.35.toFixed(1));
+
+/*
+ *
+ * Task 3
+ *
+ */
+
+var priceOne = 0.1;
+var priceTwo = 0.5;
+
+var summBy = (priceOne + priceTwo).toFixed(2);
+console.log(summBy + "$");
+
+/*
+ *
+ * Task 4
+ *
+ */
+
+//var k = 0;
+//while (k != 10) {
+//    k += 0.2;
+//}
+
+/*
+ *
+ * Task 5
+ * Decimial end of num
+ *
+ */
+
+function getDecimial(num) {
+    return (num - Math.floor(num)).toFixed(5);
+}
+
+console.log(getDecimial(1.1124514));
+
+/*
+ *
+ * Task 6
+ * Bine formula (need to do this)
+ *
+ */
+
+/*
+ *
+ * Task 7
+ *
+ */
+
+var maxx = 100;
+console.log((Math.random() * maxx).toFixed(2));
+
+
+/*
+ *
+ * Task 8
+ *
+ */
+
+var someMin = 10,
+    someMax = 900;
+
+var getRandom = (someMin + Math.random() * (someMax - someMin)).toFixed(0);
+console.log(getRandom);
+
+/*
+ *
+ * Task 9
+ *
+ */
+
+function randomInteger(min,max) {
+    var result = (min + Math.random() * (max - min)).toFixed(0);
+    result = Math.round(result);
+    return result;
+}
+
+console.log(randomInteger(1,4));
