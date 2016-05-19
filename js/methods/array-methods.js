@@ -292,7 +292,7 @@ console.log(arrSorted);
  *
  */
 
-var arrToSort = [1,24,5,465,3,2,46];
+var arrToSort = [1, 24, 5, 465, 3, 2, 46];
 
 function randomFunc(a, b) {
     return Math.random() - 0.5;
