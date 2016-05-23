@@ -84,3 +84,49 @@ _.reduce(reduceArr, function(sum, current) {
 });
 
 console.log(result);
+
+/*
+ *
+ * Homework
+ *
+ */
+
+
+/*
+ *
+ * Task 1
+ *
+ */
+
+var arr2 = ["Есть", "жизнь", "на", "Марсе"];
+
+var arrLength = arr2.map(function(item) {
+    return item.length;
+});
+
+console.log(arrLength);
+
+/*
+ *
+ * Task 2
+ *
+ */
+
+var arrSome = [1, 2, 3, 4, 5];
+
+function getSumm(arr) {
+
+    var result = [];
+    if (!arr.length) return result;
+
+    var totalSumm = arr.reduce(function(sum, item){
+        result.push(sum);
+        return sum + item;
+    });
+
+    result.push(totalSumm);
+
+    return result;
+}
+
+console.log(getSumm(arrSome)); // [ 1, 1+2, 1+2+3, 1+2+3+4, 1+2+3+4+5 ] = [ 1, 3, 6, 10, 15 ]
